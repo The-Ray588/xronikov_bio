@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>хроников — Био</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="particles-js"></div>
+  <div class="spotlight"></div>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <nav>
+    <div class="logo">хроников</div>
+    <div class="nav-right">
+      <div class="nav-links">
+        <a href="#" data-i18n="nav_about">О канале</a>
+        <a href="#" data-i18n="nav_contact">Контакты</a>
+      </div>
+      <div class="clock" id="clock">00:00:00</div>
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+      <button class="theme-toggle" id="theme-toggle">
+        <span class="theme-icon">🌙</span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="left-side">
+      <div class="badge reveal" data-i18n="badge">Истории, подарки и атмосфера</div>
+      <h1 class="reveal">
+        <span data-i18n="greeting">Привет, я </span><span class="typed" id="typed"></span><span class="cursor-bar">|</span>
+      </h1>
+      <p class="description reveal" data-i18n="description">
+        Канал с интересными историями и подарками. Уже 6 440+ подписчиков. Подписывайся, чтобы не пропустить самое интересное.
+      </p>
+      <div class="buttons reveal">
+        <a href="https://t.me/defdimasik" class="btn btn-primary" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953l11.57-4.461c.537-.194 1.006.131.832.942z"/></svg>
+          <span data-i18n="btn_subscribe">Подписаться</span>
+        </a>
+        <a href="https://t.me/xronikov" class="btn btn-secondary" target="_blank" data-i18n="btn_ad">Купить рекламу</a>
+        <a href="https://t.me/xronikov?text=Хочу%20купить%20NFT" class="btn btn-nft" target="_blank" data-i18n="btn_nft">Купить НФТ</a>
+        <button class="btn btn-ghost" id="copy-btn" type="button" data-i18n="btn_copy">Скопировать ссылку</button>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="avatar-card reveal" id="avatar-card">
+        <div class="avatar-wrap">
+          <img src="assets/avatar.jpg" alt="хроников" class="avatar-img">
+        </div>
+        <div class="avatar-info">
+          <div class="tg-link">
+            <span data-i18n="admin_label">Админ:</span> <a href="https://t.me/xronikov" target="_blank">@xronikov</a>
+          </div>
+          <a href="https://t.me/defdimasik" class="btn-small" target="_blank" data-i18n="btn_contact">Связаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast">Скопировано!</div>
+
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
